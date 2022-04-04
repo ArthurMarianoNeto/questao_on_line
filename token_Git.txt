@@ -1,3 +1,3 @@
-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
+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
 
 $ bundle update mimemagic
