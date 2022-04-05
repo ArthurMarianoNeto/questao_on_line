@@ -290,6 +290,7 @@ DEPENDENCIES
   cocoon
   coffee-rails (~> 4.2)
   devise
+  elasticsearch
   faker
   hiredis
   jbuilder (~> 2.5)
