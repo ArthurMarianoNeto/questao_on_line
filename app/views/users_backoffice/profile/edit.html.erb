@@ -83,6 +83,9 @@
                   <label class="btn <%= gender_select(@user, 'F') %>" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                     <%= profile_form.radio_button :gender, "F", "data-parsley-multiple":"gender"%> &nbsp; Feminino &nbsp;
                   </label>
+                  <label class="btn <%= gender_select(@user, 'I') %>" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                    <%= profile_form.radio_button :gender, "I", "data-parsley-multiple":"gender"%> &nbsp; Indefinido &nbsp;
+                  </label>
                 </div>
               </div>
             </div>
