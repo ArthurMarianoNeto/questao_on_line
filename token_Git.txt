@@ -1,3 +1,2 @@
-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
+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
 
-$ bundle update mimemagic
