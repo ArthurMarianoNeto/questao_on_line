@@ -1,6 +1,6 @@
 require 'net/http'
 class CEP
-  attr_reader :logradouro, :bairro, :localidade, :uf
+  attr_reader :logradouro, :numero, :bairro, :localidade, :uf
   
   END_POINT = "https://viacep.com.br/ws/"
   FORMAT = "json"
@@ -11,13 +11,14 @@ class CEP
   end
 
   def endereco
-    "#{@logradouro} / #{@bairro} / #{@localidade} - #{@uf}"
+    "#{@logradouro} / N° 0#{@numero } /  #{@bairro} / #{@localidade} - #{@uf}"
   end
 
   private
 
   def preencher_dados(cep_econtrado)
     @logradouro = cep_econtrado["logradouro"]
+    @numero     = cep_econtrado["numero"]
     @bairro     = cep_econtrado["bairro"]
     @localidade = cep_econtrado["localidade"]
     @uf         = cep_econtrado["uf"]
