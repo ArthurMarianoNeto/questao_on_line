@@ -10,7 +10,7 @@ class Site::AnswerController < SiteController
   end
 end
 =end
-begin
+
 class Site::AnswerController < SiteController
   def question
     @answer = Answer.find(params[:answer_id])
